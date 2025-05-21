@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>美食介紹</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: "Segoe UI", Arial, sans-serif;
+			background-color: #f0f4f8;
+		}
+
+		.container {
+			width: 100vw;
+			height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 60px 1fr 1fr 100px;
+			gap: 10px;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		.container div {
+			border: 1px solid #ddd;
+			padding: 10px;
+			box-sizing: border-box;
+			background-color: #fffbea;
+			border-radius: 6px;
+		}
+
+		.header {
+			grid-column: 1 / 4;
+			text-align: center;
+			font-size: 26px;
+			font-weight: bold;
+			background-color: #90caf9;
+			color: #1a237e;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 6px;
+		}
+
+		.a {
+			grid-column: 1 / span 2;
+			grid-row: 2 / span 2;
+		}
+
+		.footer {
+			grid-column: 1 / span 3;
+			text-align: center;
+			background-color: #c5e1a5;
+			color: #33691e;
+			border-radius: 6px;
+		}
+
+		.western, .eastern {
+			text-align: center;
+		}
+
+		h3 {
+			margin-top: 0;
+			color: #3e4a61;
+		}
+
+		.container img {
+			max-width: auto;
+			height: auto;
+			display: block;
+			margin: 10px auto;
+			border-radius: 5px;
+			box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">粽子</div>
+
+		<div class="a">
+			<h3>圖</h3>
+			<img src="image/h.jpg" alt="">
+		</div>
+
+		<div class="western">
+			<h3>來源</h3>
+			文獻記載最早見於西晉時期的三吳地區（今江蘇一帶），用菇茭白葉包黍米成牛角狀，稱「角黍」。粽子傳統是仲夏與端午的必備食品，西晉周處《風土記》寫道：「仲夏端午，烹鶩角黍。
+		</div>
+
+		<div class="eastern">
+			<h3>粽子種類</h3>
+			北方粽，北京粽，山東粽，陝西粽，南方粽，白粽子，四川粽，嘉興粽，溫州大米粽，
+		</div>
+	</div>
+</body>
+</html>
